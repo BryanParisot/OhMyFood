@@ -1,0 +1,56 @@
+section {
+  width: 100%;
+  height: auto;
+  padding: 45px 17px;
+  font-family: $text;
+
+  h3{
+      font-size: 2rem;
+      font-weight: 500;
+  }
+
+  .contain_restaurant {
+    width: 100%;
+    height: auto;
+    border-radius: 17px 17px 17px 17px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .contain_img {
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 17px 17px 0px 0px;
+    }
+}
+.contain_txt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 14px;
+
+    h4{
+        font-size: 1.20rem;
+    }
+    p{
+        margin-top: 3px;
+        font-weight: 100;
+    }
+    .fa-heart{
+        align-self: center;
+        margin-right: 10px;
+        font-size: 1.5rem;
+        font-weight: 100;
+        cursor: pointer;
+
+       &:hover{
+            background: linear-gradient($secondaire, $primary);
+        }
+    }
+}
+}

@@ -115,7 +115,6 @@ a {
 }
 
 .container_fonctionnement {
-  position: absolute;
   width: 100%;
   height: auto;
   font-family: "Roboto";
@@ -156,6 +155,57 @@ a {
 }
 .container_fonctionnement .fa-store {
   color: #9356dc;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 45px 17px;
+  font-family: "Roboto";
+}
+section h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+section .contain_restaurant {
+  width: 100%;
+  height: auto;
+  border-radius: 17px 17px 17px 17px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+section .contain_img {
+  width: 100%;
+  height: 180px;
+  margin-top: 30px;
+}
+section .contain_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 17px 17px 0px 0px;
+}
+section .contain_txt {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 14px;
+}
+section .contain_txt h4 {
+  font-size: 1.2rem;
+}
+section .contain_txt p {
+  margin-top: 3px;
+  font-weight: 100;
+}
+section .contain_txt .fa-heart {
+  align-self: center;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+section .contain_txt .fa-heart:hover {
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 /*# sourceMappingURL=style.css.map */
