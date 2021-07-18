@@ -49,4 +49,13 @@
       align-self: flex-end;
     }
   }
+
+  button{
+      @include btn_style;
+      width: 200px;
+      text-align: center;
+      display: flex;
+      margin: 60px auto;
+      justify-content: center;
+  }
 }
