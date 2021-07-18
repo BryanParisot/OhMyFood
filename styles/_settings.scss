@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Shrikhand&display=swap");
+@import"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap";
 
 $text: "Roboto";
 $title: "Shrikhand";
@@ -7,6 +7,19 @@ $primary: #9356dc;
 $secondaire: #ff79da;
 $tertiaire: #99e2d0;
 $black: black;
+
+// mixin
+
+@mixin btn_style{
+  border-radius: 30px;
+  padding: 18px 15px;
+  background: linear-gradient($secondaire, $primary ) ;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
 
 @mixin verticalCenter {
   display: flex;
