@@ -3,6 +3,16 @@ section {
   height: auto;
   padding: 45px 17px;
   font-family: $text;
+  background-color: rgb(240, 239, 239);
+
+  span{
+    position: relative;
+    padding: 5px 7px;
+    background: $tertiaire;
+    top: 68px;
+    left: 250px;
+  }
+
 
   h3{
       font-size: 2rem;
