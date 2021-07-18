@@ -1,0 +1,52 @@
+.section {
+  border-radius: 30px 30px 0px 0px;
+  width: 100%;
+  background-color: rgb(240, 239, 239);
+  margin-top: -20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: $text;
+
+  .title_heart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-family: $title;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+  h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 29px;
+    border-bottom: 3px solid black;
+    width: 40px;
+  }
+  .contain_menu_prix {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+
+    .contain_menu_prix_title {
+      p {
+        margin-top: 3px;
+        font-size: 0.9rem;
+        font-weight: 100;
+      }
+    }
+    p {
+      align-self: flex-end;
+    }
+  }
+}
