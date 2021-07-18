@@ -1,0 +1,22 @@
+{
+  "name": "parisotbryan_3_18072021",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/index.scss:./styles/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanParisot/ParisotBryan_3_18072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryanParisot/ParisotBryan_3_18072021/issues"
+  },
+  "homepage": "https://github.com/BryanParisot/ParisotBryan_3_18072021#readme",
+  "dependencies": {
+    "sass": "^1.35.2"
+  }
+}

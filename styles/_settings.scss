@@ -1,24 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Shrikhand&display=swap");
 
-@mixin verticalCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}    
+$text: "Roboto";
+$title: "Shrikhand";
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+$primary: #9356dc;
+$secondaire: #ff79da;
+$tertiaire: #99e2d0;
+$black: black;
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button{
-    cursor: pointer;
-}
-li{
-    list-style: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-a{
-    text-decoration: none;
-    cursor: pointer;
+button {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
 }
