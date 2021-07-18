@@ -1,0 +1,29 @@
+footer{
+    width: 100%;
+    height: auto;
+    background: rgb(32, 32, 32);
+    color: white;
+    padding: 30px 20px;
+    a{
+        color: white;
+    }
+    h4{
+        font-size: 1.25rem;
+        font-family: $title;
+        margin-bottom: 10px;
+    }
+    ul{
+        li{
+            line-height: 30px;
+
+            .fa-utensils{
+                margin-right: 15px;
+            }
+            .fa-hands-helping{
+                margin-right: 15px;
+
+            }
+
+        }
+    }
+}
