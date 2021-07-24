@@ -50,16 +50,40 @@ section {
       margin-top: 3px;
       font-weight: 100;
     }
-    .fa-heart {
-      align-self: center;
-      margin-right: 10px;
-      font-size: 1.5rem;
-      font-weight: 100;
+    
+    .heartIcon {
+      @include menu-heartIconStyle;
+      color: $lightgrey;
+      display: flex;
+    }
+    i.fas.fa-heart {
+      font-size: 1.7rem;
+    }
+  
+    .heartIcon:hover,
+    .heartIcon:active,
+    .heartIcon-menu:hover,
+    .heartIcon-menu:active {
+      animation: heart-anim 1s ease;
+      animation-fill-mode: forwards;
       cursor: pointer;
-
-      &:hover {
-        background: linear-gradient($secondaire, $primary);
+    }
+  
+    @keyframes heart-anim {
+      from {
+        -webkit-text-fill-color: transparent;
+        background-size: 100%;
+      }
+  
+      to {
+        -webkit-text-stroke: initial;
+        color: transparent;
+        background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
       }
     }
+  
+
   }
 }

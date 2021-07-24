@@ -7,6 +7,7 @@ $primary: #9356dc;
 $secondaire: #ff79da;
 $tertiaire: #99e2d0;
 $black: black;
+$lightgrey: rgb(240, 239, 239);
 
 // mixin
 
@@ -26,6 +27,13 @@ $black: black;
   justify-content: center;
   align-items: center;
 }
+
+@mixin menu-heartIconStyle {
+  font-size: 4rem;
+  color: $lightgrey;
+  -webkit-text-stroke: 2px black;
+}
+
 
 * {
   box-sizing: border-box;
