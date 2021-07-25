@@ -342,10 +342,9 @@ footer ul li .fa-hands-helping {
   border-bottom: 3px solid black;
   width: 40px;
 }
-.section .contain_menu_prix {
+.section .contain_menu_prix, .section .contain_menu_prix_anim_3, .section .contain_menu_prix_anim_2, .section .contain_menu_prix_anim_1 {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
   width: 100%;
   height: 60px;
   border-radius: 10px;
@@ -354,57 +353,56 @@ footer ul li .fa-hands-helping {
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
-  animation: apparition 0.8s ease-in-out;
-  animation-delay: 0s;
-  opacity: 1;
 }
-.section .contain_menu_prix:hover {
+.section .contain_menu_prix .price, .section .contain_menu_prix_anim_3 .price, .section .contain_menu_prix_anim_2 .price, .section .contain_menu_prix_anim_1 .price {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section .contain_menu_prix .anim_1, .section .contain_menu_prix_anim_3 .anim_1, .section .contain_menu_prix_anim_2 .anim_1, .section .contain_menu_prix_anim_1 .anim_1 {
+  animation: apparition 0.8s ease-out;
+}
+.section .contain_menu_prix .anim_2, .section .contain_menu_prix_anim_3 .anim_2, .section .contain_menu_prix_anim_2 .anim_2, .section .contain_menu_prix_anim_1 .anim_2 {
+  animation: apparition 0.8s ease-out;
+}
+.section .contain_menu_prix .anim_3, .section .contain_menu_prix_anim_3 .anim_3, .section .contain_menu_prix_anim_2 .anim_3, .section .contain_menu_prix_anim_1 .anim_3 {
+  animation: apparition 0.8s ease-out;
+}
+.section .contain_menu_prix:hover, .section .contain_menu_prix_anim_3:hover, .section .contain_menu_prix_anim_2:hover, .section .contain_menu_prix_anim_1:hover {
   justify-content: none;
 }
-.section .contain_menu_prix:hover .animation {
-  display: block;
+.section .contain_menu_prix:hover .animation, .section .contain_menu_prix_anim_3:hover .animation, .section .contain_menu_prix_anim_2:hover .animation, .section .contain_menu_prix_anim_1:hover .animation {
+  width: 65px;
   display: flex;
 }
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(1px);
-  }
-  100% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(100px);
-  }
+.section .contain_menu_prix:hover .fa-check-circle, .section .contain_menu_prix_anim_3:hover .fa-check-circle, .section .contain_menu_prix_anim_2:hover .fa-check-circle, .section .contain_menu_prix_anim_1:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition: 0.8s;
 }
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(100px);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(1px);
-  }
+.section .contain_menu_prix_anim_1 {
+  animation: apparition 0.8s ease-out;
 }
-.section .contain_menu_prix .anim_1 {
-  animation-delay: 0.3s;
+.section .contain_menu_prix_anim_2 {
+  animation: apparition 1s ease-out;
 }
-.section .contain_menu_prix .anim_2 {
-  animation-delay: 0.6s;
-}
-.section .contain_menu_prix .anim_3 {
-  animation-delay: 0.8s;
+.section .contain_menu_prix_anim_3 {
+  animation: apparition 1.3s ease-out;
 }
 @keyframes apparition {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(100px);
   }
   to {
     opacity: 1;
-    transform: translateY(1px);
+    transform: translateY(0px);
   }
 }
 .section h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 13px 0px 5px 10px;
 }
 .section p {
@@ -414,6 +412,7 @@ footer ul li .fa-hands-helping {
 .section .contain_menu_prix_title {
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 80%;
 }
 .section .contain_menu_prix_title p {
   overflow: hidden;
@@ -445,22 +444,18 @@ footer ul li .fa-hands-helping {
 .section i {
   display: block;
 }
-.section .fa-check-circle {
-  animation: 1s;
-  transform: rotate(0deg);
-}
 .section .animation {
   overflow: hidden;
-  display: none;
+  width: 0%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 65px;
   height: 100%;
   color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #99e2d0;
-  animation: slide-left 0.6s linear both;
+  transition: width 0.8s linear;
 }
 
 /*# sourceMappingURL=index.css.map */
