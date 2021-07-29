@@ -289,7 +289,7 @@ footer ul li .fa-hands-helping {
   padding-right: 15px;
   font-family: "Roboto";
   margin-top: -100px;
-  position: absolute;
+  position: relative;
 }
 .section .title_heart {
   width: 100%;
