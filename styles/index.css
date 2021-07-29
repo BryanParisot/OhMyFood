@@ -342,7 +342,7 @@ footer ul li .fa-hands-helping {
   border-bottom: 3px solid black;
   width: 40px;
 }
-.section .contain_menu_prix, .section .contain_menu_prix_anim_3, .section .contain_menu_prix_anim_2, .section .contain_menu_prix_anim_1 {
+.section .contain_menu_prix, .section .contain_menu_prix_anim_4, .section .contain_menu_prix_anim_3, .section .contain_menu_prix_anim_2, .section .contain_menu_prix_anim_1 {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
@@ -354,30 +354,30 @@ footer ul li .fa-hands-helping {
   overflow: hidden;
   white-space: nowrap;
 }
-.section .contain_menu_prix .price, .section .contain_menu_prix_anim_3 .price, .section .contain_menu_prix_anim_2 .price, .section .contain_menu_prix_anim_1 .price {
+.section .contain_menu_prix .price, .section .contain_menu_prix_anim_4 .price, .section .contain_menu_prix_anim_3 .price, .section .contain_menu_prix_anim_2 .price, .section .contain_menu_prix_anim_1 .price {
   width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.section .contain_menu_prix .anim_1, .section .contain_menu_prix_anim_3 .anim_1, .section .contain_menu_prix_anim_2 .anim_1, .section .contain_menu_prix_anim_1 .anim_1 {
+.section .contain_menu_prix .anim_1, .section .contain_menu_prix_anim_4 .anim_1, .section .contain_menu_prix_anim_3 .anim_1, .section .contain_menu_prix_anim_2 .anim_1, .section .contain_menu_prix_anim_1 .anim_1 {
   animation: apparition 0.8s ease-out;
 }
-.section .contain_menu_prix .anim_2, .section .contain_menu_prix_anim_3 .anim_2, .section .contain_menu_prix_anim_2 .anim_2, .section .contain_menu_prix_anim_1 .anim_2 {
+.section .contain_menu_prix .anim_2, .section .contain_menu_prix_anim_4 .anim_2, .section .contain_menu_prix_anim_3 .anim_2, .section .contain_menu_prix_anim_2 .anim_2, .section .contain_menu_prix_anim_1 .anim_2 {
   animation: apparition 0.8s ease-out;
 }
-.section .contain_menu_prix .anim_3, .section .contain_menu_prix_anim_3 .anim_3, .section .contain_menu_prix_anim_2 .anim_3, .section .contain_menu_prix_anim_1 .anim_3 {
+.section .contain_menu_prix .anim_3, .section .contain_menu_prix_anim_4 .anim_3, .section .contain_menu_prix_anim_3 .anim_3, .section .contain_menu_prix_anim_2 .anim_3, .section .contain_menu_prix_anim_1 .anim_3 {
   animation: apparition 0.8s ease-out;
 }
-.section .contain_menu_prix:hover, .section .contain_menu_prix_anim_3:hover, .section .contain_menu_prix_anim_2:hover, .section .contain_menu_prix_anim_1:hover {
+.section .contain_menu_prix:hover, .section .contain_menu_prix_anim_4:hover, .section .contain_menu_prix_anim_3:hover, .section .contain_menu_prix_anim_2:hover, .section .contain_menu_prix_anim_1:hover {
   justify-content: none;
 }
-.section .contain_menu_prix:hover .animation, .section .contain_menu_prix_anim_3:hover .animation, .section .contain_menu_prix_anim_2:hover .animation, .section .contain_menu_prix_anim_1:hover .animation {
+.section .contain_menu_prix:hover .animation, .section .contain_menu_prix_anim_4:hover .animation, .section .contain_menu_prix_anim_3:hover .animation, .section .contain_menu_prix_anim_2:hover .animation, .section .contain_menu_prix_anim_1:hover .animation {
   width: 65px;
   display: flex;
 }
-.section .contain_menu_prix:hover .fa-check-circle, .section .contain_menu_prix_anim_3:hover .fa-check-circle, .section .contain_menu_prix_anim_2:hover .fa-check-circle, .section .contain_menu_prix_anim_1:hover .fa-check-circle {
+.section .contain_menu_prix:hover .fa-check-circle, .section .contain_menu_prix_anim_4:hover .fa-check-circle, .section .contain_menu_prix_anim_3:hover .fa-check-circle, .section .contain_menu_prix_anim_2:hover .fa-check-circle, .section .contain_menu_prix_anim_1:hover .fa-check-circle {
   transform: rotate(360deg);
   transition: 0.8s;
 }
@@ -389,6 +389,9 @@ footer ul li .fa-hands-helping {
 }
 .section .contain_menu_prix_anim_3 {
   animation: apparition 1.3s ease-out;
+}
+.section .contain_menu_prix_anim_4 {
+  animation: apparition 1.6s ease-out;
 }
 @keyframes apparition {
   from {

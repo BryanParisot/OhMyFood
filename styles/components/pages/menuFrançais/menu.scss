@@ -120,6 +120,11 @@
     @extend .contain_menu_prix;
     animation: apparition 1.3s ease-out;
   }
+  .contain_menu_prix_anim_4{
+    @extend .contain_menu_prix;
+    animation: apparition 1.6s ease-out;
+  }
+
 
 
   @keyframes apparition {
