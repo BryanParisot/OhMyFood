@@ -16,7 +16,7 @@
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: rgb(219, 218, 218);
+  background-color: $lightgrey;
   padding: 40px 33px ;
   font-family: $text;
 
@@ -27,11 +27,16 @@
   }
   p{
     font-weight: 100;
+    font-size: 1.25rem;
+    color: #929191;
+
   }
 
   button{
     margin-top: 25px;
     @include btn_style;
+    width: 55vw;
+    height: 9vh;
   }
 }
   
