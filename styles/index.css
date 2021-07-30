@@ -82,7 +82,7 @@ a {
 .localisation {
   width: 100%;
   height: 40px;
-  background: #99e2d0;
+  background: #ececec;
   font-family: "Roboto";
   font-size: 1rem;
   display: flex;
@@ -459,6 +459,134 @@ footer ul li .fa-hands-helping {
   border-bottom-right-radius: 10px;
   background-color: #99e2d0;
   transition: width 0.8s linear;
+}
+
+.localisation input {
+  height: 20px;
+  width: 130px;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+}
+.localisation input ::placeholder {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.localisation input:focus {
+  outline: none;
+}
+.localisation input:hover::placeholder {
+  color: lightgrey;
+}
+
+.preloader {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: black;
+  opacity: 0.6;
+  overflow: hidden;
+  z-index: 3;
+  -webkit-animation-name: loading;
+  animation-name: loading;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top-color: blue;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top-color: black;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top-color: red;
+  -webkit-animation: spin 0.75s linear infinite;
+  animation: spin 0.75s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    height: 100%;
+  }
+  99% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    height: 100%;
+  }
+  99% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
