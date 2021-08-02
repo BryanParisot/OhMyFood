@@ -1,8 +1,9 @@
 .container_fonctionnement{
-    width: 100%;
+    max-width: 380px;
     height: auto;
     font-family: $text;
     padding: 45px 20px ;
+    margin: 0px auto;
 
     h3{
         font-size:1.9rem;
@@ -21,7 +22,7 @@
     a{
         @include verticalCenter;
         justify-content: space-between;
-        width: 92%;
+        max-width:310px;
         height: 20px;
         margin-right: auto;
         margin-left: auto;
@@ -35,7 +36,8 @@
     }
 
     i{
-        color: #929191;
+        color: rgb(153, 151, 151)
+    ;
     }
 
     #bleu{
@@ -44,4 +46,45 @@
     .fa-store{
         color: $primary;
     }
+}
+@media screen and (min-width: 740px){
+    .container_fonctionnement{
+        width: 80% !important;
+        text-align: center;
+
+        .container_contain_fonctionnement{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0px auto;
+
+
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                height: 140px;
+                margin-left: 20px;
+                margin-top: 30px;
+                font-size: 1.15rem;
+                padding: 70px 70px;
+
+                
+            }
+
+            i{
+                margin-bottom: 15px;
+            }
+
+        }
+        
+        .circle_number{
+            display: none;
+        }
+    }
+
+
 }

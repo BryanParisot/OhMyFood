@@ -23,7 +23,7 @@
   h2{
     margin-bottom: 15px;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 900;
   }
   p{
     font-weight: 100;
@@ -33,10 +33,20 @@
   }
 
   button{
-    margin-top: 25px;
+    margin: 25px auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include btn_style;
-    width: 55vw;
+    max-width: 59vw;
     height: 9vh;
   }
 }
+@media screen and (min-width: 740px){
+  button{
+    max-width: 45vw !important;
+  }
+}
+  
+
   

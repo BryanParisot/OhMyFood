@@ -198,3 +198,43 @@
     transition: width 0.8s linear;
   }
 }
+
+
+@media screen and (min-width: 740px){
+    
+  .section{
+    display: flex;
+    flex-direction: column;
+
+    .contain_all_menu{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px auto;
+
+
+
+    .contain_menu{
+      width: 45%;
+      margin-left: 10px;
+      margin: 0px auto;
+
+    }
+  }
+  }
+}
+
+@media screen and (min-width: 1200px){
+
+.section{
+
+  .contain_all_menu{
+    width: 100%;
+
+  .contain_menu{
+    width: 27%;
+  }
+}
+}
+}
+
+
