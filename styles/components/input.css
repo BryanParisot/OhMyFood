@@ -1,0 +1,51 @@
+.localisation input {
+  height: 20px;
+  width: 130px;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+}
+
+.localisation input ::-webkit-input-placeholder {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.localisation input :-ms-input-placeholder {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.localisation input ::-ms-input-placeholder {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.localisation input ::placeholder {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.localisation input:focus {
+  outline: none;
+}
+
+.localisation input:hover::-webkit-input-placeholder {
+  color: lightgrey;
+}
+
+.localisation input:hover:-ms-input-placeholder {
+  color: lightgrey;
+}
+
+.localisation input:hover::-ms-input-placeholder {
+  color: lightgrey;
+}
+
+.localisation input:hover::placeholder {
+  color: lightgrey;
+}
+/*# sourceMappingURL=input.css.map */
