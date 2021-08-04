@@ -232,7 +232,7 @@ section .new {
   font-weight: 700;
   color: #578378;
 }
-section h3 {
+section h2 {
   font-size: 2rem;
   font-weight: 900;
 }
@@ -264,8 +264,8 @@ section .contain_txt {
   width: 100%;
   padding: 15px 14px;
 }
-section .contain_txt h4 {
-  font-size: 1.2rem;
+section .contain_txt h3 {
+  font-size: 1.2rem !important;
 }
 section .contain_txt p {
   margin-top: 3px;

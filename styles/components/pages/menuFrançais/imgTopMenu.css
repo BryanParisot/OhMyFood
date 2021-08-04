@@ -1,0 +1,13 @@
+.container_img_french {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.container_img_french img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=imgTopMenu.css.map */
