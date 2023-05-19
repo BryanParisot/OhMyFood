@@ -25,6 +25,10 @@ Utiliser un système de gestion de versions pour le suivi du projet et son hébe
 
 Mettre en place son environnement Front-End
 
+## Tech Stack
+
+**Client:** HTML, SCSS
+
 
 ## Maquette du site
 
